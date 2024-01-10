@@ -1,1 +1,3 @@
-# vscode_node_starter
+# vscode node starter
+
+Repo level VScode config files.  
