@@ -1,0 +1,19 @@
+{
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": ["-e", "TZ=America/New_York"],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"github.copilot"
+			]
+		}
+	},
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig,target=/home/node/.gitconfig,type=bind,consistency=cached"
+	]
+}
